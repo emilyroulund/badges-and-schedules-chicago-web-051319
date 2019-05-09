@@ -3,6 +3,7 @@ def badge_maker (name)
 end
 
 def batch_badge_creator (attendees)
+<<<<<<< HEAD
   badges_list = []
   attendees.each do |name| 
   badges_list << "Hello, my name is #{name}."
@@ -16,6 +17,11 @@ def assign_rooms (attendees)
   room_assignment << "Hello, #{name}! You'll be assigned to room #{index + 1}!"
 end
 room_assignment
+=======
+ attendees.each do |name| 
+   return "Hello, my name is #{name}."
+ end 
+>>>>>>> e434af4e14589954b16af7601b18b4179c011e85
 end 
 
 def printer (attendees)
@@ -27,3 +33,11 @@ def printer (attendees)
   end
 end 
 
+<<<<<<< HEAD
+=======
+def printer 
+  return batch_badge_creator (array_names) 
+  return assign_rooms (array_names)
+end 
+
+>>>>>>> e434af4e14589954b16af7601b18b4179c011e85
